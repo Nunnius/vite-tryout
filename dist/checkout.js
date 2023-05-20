@@ -1,0 +1,1 @@
+var h=(c,o,t)=>{if(!o.has(c))throw TypeError("Cannot "+t)};var e=(c,o,t)=>(h(c,o,"read from private field"),t?t.call(c):o.get(c)),s=(c,o,t)=>{if(o.has(c))throw TypeError("Cannot add the same private member more than once");o instanceof WeakSet?o.add(c):o.set(c,t)};var n;class l{constructor(){s(this,n,".content");console.log(e(this,n))}}n=new WeakMap;new l;
